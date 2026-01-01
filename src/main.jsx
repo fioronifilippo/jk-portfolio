@@ -13,7 +13,7 @@ import Olivello from "./olivello.jsx";
 import TuttoVero from "./tuttoVero.jsx";
 import SeanScully from "./seanScully.jsx";
 import EyesEars from "./eyesEars.jsx";
-import CasaShkodra from "./CasaShkodra.jsx";
+import CasaShkodra from "./casaShkodra.jsx";
 import Cinema from "./cinema.jsx";
 import Nirvana from "./nirvana.jsx";
 import WebDesign from "./webdesign.jsx";
