@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./progetto.css";
 
 function ProgettoSimp({ titolo, descrizione }) {
@@ -8,6 +7,8 @@ function ProgettoSimp({ titolo, descrizione }) {
         <h1>{titolo}</h1>
         <p>{descrizione}</p>
       </div>
+      {/* Manteniamo il div vuoto come nel tuo originale, 
+          nel caso servisse per spaziatura CSS */}
       <div id="progettoImmagine"></div>
     </>
   );

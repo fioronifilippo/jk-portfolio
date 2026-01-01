@@ -1,13 +1,7 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import Header from "./header.jsx";
-import Footer from "./footer.jsx";
 import Progetto from "./progetto.jsx";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Header />
+export default function Cinema() {
+  return (
     <main className="main progettiContenitore">
       <Progetto
         titolo={
@@ -23,16 +17,13 @@ createRoot(document.getElementById("root")).render(
           </>
         }
       />
-      <>
-        <div className="centrata spazio-100">
-          <img src="/cinema-1.png" alt="" />
-        </div>
-        <div id="due-colonne">
-          <img className="width370" src="/cinema-2.png" alt="" />
-          <img className="width370" src="/cinema-3.png" alt="" />
-        </div>
-      </>
+      <div className="centrata spazio-100">
+        <img src="/cinema-1.png" alt="" />
+      </div>
+      <div id="due-colonne">
+        <img className="width370" src="/cinema-2.png" alt="" />
+        <img className="width370" src="/cinema-3.png" alt="" />
+      </div>
     </main>
-    <Footer />
-  </StrictMode>
-);
+  );
+}

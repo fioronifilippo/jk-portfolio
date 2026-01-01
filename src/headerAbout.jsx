@@ -1,17 +1,14 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./header.css";
 
 function HeaderAbout() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div id="headerContenitore">
-        <a href="/index.html" className="linkHeader">
-          HOME
-        </a>
-      </div>
-    </>
+    <header id="headerContenitore">
+      {/* Usiamo Link per tornare alla Home senza ricaricare */}
+      <Link to="/" className="linkHeader">
+        HOME
+      </Link>
+    </header>
   );
 }
 

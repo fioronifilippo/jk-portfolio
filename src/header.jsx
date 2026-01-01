@@ -1,20 +1,19 @@
-import { useState } from "react";
+import { Link } from "react-router-dom"; // Fondamentale per non ricaricare la pagina
 import "./header.css";
 
 function Header() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div id="headerContenitore">
-        <a href="/index.html" target="">
-          <img src="/JozefinaKoliqi.svg" className="logo" alt="Jozefina logo" />
-        </a>
-        <a href="/about-me.html" className="linkHeader">
-          ABOUT ME
-        </a>
-      </div>
-    </>
+    <header id="headerContenitore">
+      {/* Link alla Home */}
+      <Link to="/">
+        <img src="/JozefinaKoliqi.svg" className="logo" alt="Jozefina logo" />
+      </Link>
+
+      {/* Link alla pagina About Me */}
+      <Link to="/about-me" className="linkHeader">
+        ABOUT ME
+      </Link>
+    </header>
   );
 }
 

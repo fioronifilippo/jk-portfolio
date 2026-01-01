@@ -20,12 +20,30 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
-
 #aboutMeB {
-  background-color: #201e1f;
+  background-color: #201e1f !important;
+  /* Forza il contenitore a essere alto almeno quanto lo schermo */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#aboutMeB .main {
+  /* Spinge il footer verso il basso se il contenuto è poco */
+  flex: 1;
+  display: flex;
+  align-items: center; /* Centra il contenuto di About verticalmente */
 }
 
 #aboutMeB * {
+  color: #fff !important;
+}
+
+/* Assicuriamoci che anche i link del footer in questa pagina siano bianchi */
+#aboutMeB footer a,
+#aboutMeB footer p,
+#aboutMeB footer span {
   color: #fff !important;
 }
 

@@ -1,13 +1,7 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import Header from "./header.jsx";
-import Footer from "./footer.jsx";
 import Progetto from "./progetto.jsx";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Header />
+export default function Nirvana() {
+  return (
     <main className="main progettiContenitore">
       <Progetto
         titolo="ALL NIGHT LONG"
@@ -21,30 +15,27 @@ createRoot(document.getElementById("root")).render(
           </>
         }
       />
-      <>
-        <div id="contenitoreSfondo" className="sfondoNero">
-          <div id="due-colonne">
-            <img src="/nirvana1.png" alt="" />
-            <img src="/nirvana2.png" alt="" />
-            <img src="/nirvana3.png" alt="" />
-            <img src="/nirvana4.png" alt="" />
-            <img src="/nirvana5.png" alt="" />
-            <img src="/nirvana6.png" alt="" />
-            <img src="/nirvana7.png" alt="" />
-            <img src="/nirvana8.png" alt="" />
-          </div>
+      <div id="contenitoreSfondo" className="sfondoNero">
+        <div id="due-colonne">
+          <img src="/nirvana1.png" alt="" />
+          <img src="/nirvana2.png" alt="" />
+          <img src="/nirvana3.png" alt="" />
+          <img src="/nirvana4.png" alt="" />
+          <img src="/nirvana5.png" alt="" />
+          <img src="/nirvana6.png" alt="" />
+          <img src="/nirvana7.png" alt="" />
+          <img src="/nirvana8.png" alt="" />
         </div>
-        <div id="x-colonne">
-          <div>
-            <img src="/nirvana-11.jpg" alt="" />
-            <img src="/nirvana-9.jpg" alt="" />
-          </div>
-          <div>
-            <img src="/nirvana-10.jpg" alt="" />
-          </div>
+      </div>
+      <div id="x-colonne">
+        <div>
+          <img src="/nirvana-11.jpg" alt="" />
+          <img src="/nirvana-9.jpg" alt="" />
         </div>
-      </>
+        <div>
+          <img src="/nirvana-10.jpg" alt="" />
+        </div>
+      </div>
     </main>
-    <Footer />
-  </StrictMode>
-);
+  );
+}

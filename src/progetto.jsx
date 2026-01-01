@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./progetto.css";
 
 function Progetto({ titolo, descrizione, url }) {
@@ -8,9 +7,12 @@ function Progetto({ titolo, descrizione, url }) {
         <h1>{titolo}</h1>
         <p>{descrizione}</p>
       </div>
-      <div id="progettoImmagine">
-        <img class="immagine-piena" src={url} alt=""></img>
-      </div>
+      {/* Mostra il div dell'immagine solo se l'URL esiste effettivamente */}
+      {url && (
+        <div id="progettoImmagine">
+          <img className="immagine-piena" src={url} alt={titolo}></img>
+        </div>
+      )}
     </>
   );
 }

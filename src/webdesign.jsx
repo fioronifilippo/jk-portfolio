@@ -1,13 +1,7 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
-import Header from "./header.jsx";
-import Footer from "./footer.jsx";
 import Progetto from "./progetto.jsx";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Header />
+export default function WebDesign() {
+  return (
     <main className="main progettiContenitore">
       <Progetto
         titolo={
@@ -23,12 +17,9 @@ createRoot(document.getElementById("root")).render(
           </>
         }
       />
-      <>
-        <div className="centrata spazio-100">
-          <img src="/websitemin.png" alt="" />
-        </div>
-      </>
+      <div className="centrata spazio-100">
+        <img src="/websitemin.png" alt="" />
+      </div>
     </main>
-    <Footer />
-  </StrictMode>
-);
+  );
+}

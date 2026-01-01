@@ -1,22 +1,21 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
 import Header from "./header.jsx";
 import Footer from "./footer.jsx";
 import Progetto from "./progetto.jsx";
 
-createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <Header />
-    <main className="main progettiContenitore">
-      <Progetto
-        titolo="OLIVELLO"
-        descrizione={
-          <>Front labels with different flavors for Olivello Toscano bottles.</>
-        }
-        url="/olivello.jpg"
-      />
-      <>
+// Creiamo una funzione esportabile
+export default function Olivello() {
+  return (
+    <>
+      <main className="main progettiContenitore">
+        <Progetto
+          titolo="OLIVELLO"
+          descrizione={
+            <>
+              Front labels with different flavors for Olivello Toscano bottles.
+            </>
+          }
+          url="/olivello.jpg"
+        />
         <div id="due-colonne">
           <div className="olivello-cent">
             <h3>BEFORE</h3>
@@ -47,8 +46,7 @@ createRoot(document.getElementById("root")).render(
           <img className="height400" src="/olivello-7.png" alt="" />
           <img className="height400" src="/olivello-8.png" alt="" />
         </div>
-      </>
-    </main>
-    <Footer />
-  </StrictMode>
-);
+      </main>
+    </>
+  );
+}
