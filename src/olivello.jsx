@@ -1,0 +1,54 @@
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import Header from "./header.jsx";
+import Footer from "./footer.jsx";
+import Progetto from "./progetto.jsx";
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    <Header />
+    <main className="main progettiContenitore">
+      <Progetto
+        titolo="OLIVELLO"
+        descrizione={
+          <>Front labels with different flavors for Olivello Toscano bottles.</>
+        }
+        url="/olivello.jpg"
+      />
+      <>
+        <div id="due-colonne">
+          <div className="olivello-cent">
+            <h3>BEFORE</h3>
+          </div>
+          <div className="olivello-cent">
+            <h3>AFTER</h3>
+          </div>
+        </div>
+        <div id="due-colonne" className="olivello-cent">
+          <div className="colonna-img">
+            <img src="/olivello-1.png" alt="Before" />
+          </div>
+          <div className="colonna-img">
+            <img src="/olivello-2.png" alt="After" />
+          </div>
+        </div>
+        <div id="due-colonne" className="olivello-cent">
+          <div className="colonna-img">
+            <img src="/olivello-4.png" alt="Before" />
+          </div>
+          <div className="colonna-img">
+            <img src="/olivello-5.png" alt="After" />
+          </div>
+        </div>
+        <div id="quattro-colonne">
+          <img className="height400" src="/olivello-3.png" alt="" />
+          <img className="height400" src="/olivello-6.png" alt="" />
+          <img className="height400" src="/olivello-7.png" alt="" />
+          <img className="height400" src="/olivello-8.png" alt="" />
+        </div>
+      </>
+    </main>
+    <Footer />
+  </StrictMode>
+);
