@@ -20,6 +20,11 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+#progettoContenitore {
+  min-height: 300px !important;
+}
+
 #aboutMeB {
   background-color: #201e1f !important;
   /* Forza il contenitore a essere alto almeno quanto lo schermo */
