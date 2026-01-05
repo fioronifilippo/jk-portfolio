@@ -4,3 +4,9 @@
   align-items: center;
   padding: 25px 50px;
 }
+
+@media (max-width: 400px) {
+  #headerContenitore {
+    padding: 15px 20px;
+  }
+}
