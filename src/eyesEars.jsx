@@ -32,8 +32,8 @@ export default function EyesEars() {
           allowFullScreen
         ></iframe>
       </div>
-      <div id="due-colonne" className="bottomP">
-        <div className="left-align">
+      <div id="due-colonne-eyes" className="bottomP">
+        <div className="left-align-eyes">
           <h1 className="balooText balooh1">Baloo 2</h1>
           <h2 className="balooText balooh2">
             ABCDEFGHIJKLMN<br></br>OPQRSTUVWXYZ<br></br>abcdefghijklmn
@@ -49,7 +49,7 @@ export default function EyesEars() {
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
         </div>
-        <div className="colonna-item">
+        <div className="colonna-item-eyes">
           <img src="/eyes-baloo.png" alt="" />
         </div>
       </div>
