@@ -463,10 +463,20 @@ img {
   object-fit: contain;
 }
 
-/* Su schermi piccoli, riduciamo l'altezza per farle stare comode */
+/* Su schermi piccoli, mettiamo le immagini una sotto l'altra a tutta larghezza */
 @media (max-width: 768px) {
+  #eyes-colonne {
+    flex-direction: column; /* Forza la colonna singola */
+    align-items: center; /* Centra le immagini orizzontalmente */
+    padding: 50px 20px; /* Riduciamo il padding eccessivo di 150px */
+    gap: 30px; /* Spazio verticale tra le immagini */
+  }
+
   #eyes-colonne img {
-    height: 10px;
+    height: auto; /* Rimuove l'altezza fissa di 180px */
+    width: 90%; /* Copre quasi tutto lo schermo (90%) */
+    max-width: 400px; /* Evita che diventino giganti su tablet */
+    object-fit: contain;
   }
 }
 
