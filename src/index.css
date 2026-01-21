@@ -694,3 +694,28 @@ img {
   max-width: 100%;
   overflow: hidden; /* Evita lo scroll orizzontale dei margini negativi */
 }
+
+.linkHeaderHome {
+  display: none;
+}
+@media (max-width: 768px) {
+  .linkHeaderHome {
+    display: flex;
+    position: fixed;
+    z-index: 999;
+  }
+}
+
+/* Nasconde il logo solo su mobile quando la classe è presente */
+@media (max-width: 768px) {
+  .nascondi-logo-mobile {
+    display: none !important;
+  }
+}
+
+/* Assicurati che il link Home non si sovrapponga ad altri elementi */
+@media (max-width: 768px) {
+  .linkHeaderHome {
+    display: flex;
+  }
+}
