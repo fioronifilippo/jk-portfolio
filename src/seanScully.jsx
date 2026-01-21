@@ -13,7 +13,7 @@ export default function SeanScully() {
         }
         url="/sean-scully.jpg"
       />
-      <div id="due-colonne" className="meno150">
+      <div id="due-colonne" className="meno50">
         <img src="/scully-7.png" alt="" />
         <img src="/scully-2.png" alt="" />
       </div>
