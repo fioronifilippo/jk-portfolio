@@ -7,7 +7,16 @@
 
 @media (max-width: 768px) {
   #footerContenitore {
-    font-size: 14px;
-    padding: 10px 20px;
+    font-size: 12px;
+    padding: 20px; /* Aumentiamo un po' il padding verticale */
+
+    /* Cambiamo il layout in colonna */
+    flex-direction: column;
+
+    /* Centriamo i testi */
+    text-align: center;
+
+    /* AGGIUNGE LO SPAZIO TRA I DUE SPAN */
+    gap: 10px;
   }
 }
