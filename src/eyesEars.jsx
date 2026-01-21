@@ -87,43 +87,43 @@ export default function EyesEars() {
       </div>
       <div id="eyes-colonne">
         <img src="/duomo-1.png" alt="" />
-        <img src="/duomo-2.png" alt="" />
-        <img src="/duomo-3.png" alt="" />
-        <img src="/duomo-4.png" alt="" />
         <img src="/duomo-5.png" alt="" />
+        <img src="/duomo-4.png" alt="" />
+        <img src="/duomo-3.png" alt="" />
+        <img src="/duomo-2.png" alt="" />
+        <img src="/duomo-0.png" alt="" />
         <img src="/duomo-6.png" alt="" />
-        <img src="/duomo-7.png" alt="" />
         <img src="/duomo-8.png" alt="" />
       </div>
       <div id="eyes-colonne">
-        <img src="/duomo-1.png" alt="" />
-        <img src="/duomo-2.png" alt="" />
-        <img src="/duomo-3.png" alt="" />
-        <img src="/duomo-4.png" alt="" />
-        <img src="/duomo-5.png" alt="" />
-        <img src="/duomo-6.png" alt="" />
+        <img src="/cover6.png" alt="" />
         <img src="/duomo-7.png" alt="" />
-        <img src="/duomo-8.png" alt="" />
+        <img src="/duomo-9.png" alt="" />
+        <img src="/duomo-10.png" alt="" />
+        <img src="/duomo-88.png" alt="" />
+        <img src="/duomo-11.png" alt="" />
+        <img src="/duomo-12.png" alt="" />
+        <img src="/cover1.png" alt="" />
       </div>
       <div id="eyes-colonne">
-        <img src="/duomo-1.png" alt="" />
-        <img src="/duomo-2.png" alt="" />
-        <img src="/duomo-3.png" alt="" />
-        <img src="/duomo-4.png" alt="" />
-        <img src="/duomo-5.png" alt="" />
-        <img src="/duomo-6.png" alt="" />
-        <img src="/duomo-7.png" alt="" />
-        <img src="/duomo-8.png" alt="" />
+        <img src="/cover5.png" alt="" />
+        <img src="/duomo-13.png" alt="" />
+        <img src="/duomo-14.png" alt="" />
+        <img src="/duomo-15.png" alt="" />
+        <img src="/duomo-16.png" alt="" />
+        <img src="/duomo-17.png" alt="" />
+        <img src="/duomo-18.png" alt="" />
+        <img src="/cover2.png" alt="" />
       </div>
       <div id="eyes-colonne">
-        <img src="/duomo-1.png" alt="" />
-        <img src="/duomo-2.png" alt="" />
-        <img src="/duomo-3.png" alt="" />
-        <img src="/duomo-4.png" alt="" />
-        <img src="/duomo-5.png" alt="" />
-        <img src="/duomo-6.png" alt="" />
-        <img src="/duomo-7.png" alt="" />
-        <img src="/duomo-8.png" alt="" />
+        <img src="/cover3.png" alt="" />
+        <img src="/duomo-19.png" alt="" />
+        <img src="/duomo-20.png" alt="" />
+        <img src="/duomo-21.png" alt="" />
+        <img src="/duomo-22.png" alt="" />
+        <img src="/duomo-23.png" alt="" />
+        <img src="/duomo-24.png" alt="" />
+        <img src="/cover4.png" alt="" />
       </div>
       <div id="contenitoreSfondoS" className="sezioneS">
         <div className="sezione-singola">

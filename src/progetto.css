@@ -1,20 +1,38 @@
+/* 2. Gestione Titolo e Descrizione (da riga a colonna) */
 #progettoContenitore {
   display: flex;
   flex-direction: row;
   padding: 25px 0px;
   justify-content: space-between;
   min-height: 300px;
+  gap: 20px; /* Aggiunge spazio tra H1 e P quando sono affiancati */
 }
 
 #progettoContenitore p {
   max-width: 50%;
 }
 
-#progettoContenitore h1 {
-  font-size: 2.5em;
+/* Responsività sotto i 768px */
+@media (max-width: 768px) {
+  #progettoContenitore {
+    flex-direction: column; /* Sposta il paragrafo sotto l'H1 */
+    min-height: auto; /* Rimuove l'altezza minima forzata per evitare buchi vuoti */
+    justify-content: flex-start;
+    gap: 15px; /* Spazio tra titolo e paragrafo */
+  }
+
+  #progettoContenitore p {
+    max-width: 100%; /* Il paragrafo occupa tutta la larghezza */
+  }
+
+  #progettoContenitore h1 {
+    font-size: 2em; /* Ridimensiona leggermente il titolo per mobile */
+  }
 }
 
-#progettoImmagine {
-  clear: both;
-  padding: 0px;
+/* Assicuriamoci che l'immagine non crei scroll */
+#progettoImmagine img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
