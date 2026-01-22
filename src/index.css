@@ -628,10 +628,10 @@ img {
 }
 
 #eyes-colonne {
-  display: flex; /* Usiamo Flexbox invece di Grid */
-  flex-wrap: wrap; /* Se non ci stanno su una riga, vanno a capo */
-  justify-content: center; /* Centra la riga nel sito */
-  align-items: flex-end; /* Allinea le basi delle immagini (o 'center' se preferisci) */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra le coppie orizzontalmente */
+  align-items: center;
   gap: 20px; /* Spazio tra le immagini */
   margin: 0 auto;
   max-width: 1440px;
@@ -639,30 +639,36 @@ img {
 }
 
 #eyes-colonne img {
-  /* Definiamo un'altezza fissa uguale per tutte */
-  height: 180px;
-
-  /* La larghezza si adatta automaticamente per non deformare l'immagine */
+  height: 180px; /* Altezza fissa desktop */
   width: auto;
-
-  /* Impedisce alle immagini di schiacciarsi */
   object-fit: contain;
 }
 
-/* Su schermi piccoli, mettiamo le immagini una sotto l'altra a tutta larghezza */
+/* --- MOBILE (Sotto 768px) --- */
 @media (max-width: 768px) {
   #eyes-colonne {
-    flex-direction: column; /* Forza la colonna singola */
-    align-items: center; /* Centra le immagini orizzontalmente */
-    padding: 50px 20px; /* Riduciamo il padding eccessivo di 150px */
-    gap: 30px; /* Spazio verticale tra le immagini */
+    /* Manteniamo flex-direction: row per farle stare una accanto all'altra */
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 30px 15px !important; /* 30px tra le righe, 15px tra le due immagini della coppia */
+    padding: 50px 10px !important;
   }
 
   #eyes-colonne img {
-    height: auto; /* Rimuove l'altezza fissa di 180px */
-    width: 90%; /* Copre quasi tutto lo schermo (90%) */
-    max-width: 400px; /* Evita che diventino giganti su tablet */
-    object-fit: contain;
+    /* Altezza fissa per tutte le immagini della riga */
+    height: 90px !important;
+    width: auto !important;
+    /* Limitiamo la larghezza massima per sicurezza su schermi molto stretti */
+    max-width: calc(50% - 15px) !important;
+    object-fit: contain !important;
+  }
+}
+
+/* --- SMARTPHONE PICCOLI (Sotto 400px) --- */
+@media (max-width: 400px) {
+  #eyes-colonne img {
+    /* Abbassiamo leggermente l'altezza per evitare che tocchino i bordi */
+    height: 75px !important;
   }
 }
 
