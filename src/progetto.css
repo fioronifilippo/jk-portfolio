@@ -8,6 +8,12 @@
   gap: 20px; /* Aggiunge spazio tra H1 e P quando sono affiancati */
 }
 
+@media (max-width: 500px) {
+  #progettoContenitore {
+    padding-bottom: 75px;
+  }
+}
+
 #progettoContenitore p {
   max-width: 50%;
 }
