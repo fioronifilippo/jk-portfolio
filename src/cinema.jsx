@@ -17,12 +17,12 @@ export default function Cinema() {
           </>
         }
       />
-      <div className="centrata spazio-100">
+      <div className="centrata">
         <img src="/cinema-1.png" alt="" />
       </div>
       <div id="due-colonne">
-        <img className="width370" src="/cinema-2.png" alt="" />
-        <img className="width370" src="/cinema-3.png" alt="" />
+        <img className="width370" src="/cinema-new-1.png" alt="" />
+        <img className="width370" src="/cinema-new-2.png" alt="" />
       </div>
     </main>
   );
