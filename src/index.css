@@ -848,3 +848,15 @@ img {
     display: flex;
   }
 }
+
+.due-colonne-olivello {
+  gap: 1em !important;
+}
+
+.after {
+  margin-top: 50px;
+}
+
+.olivello-mobile h3 {
+  font-size: 1em;
+}

@@ -43,7 +43,7 @@ export default function Olivello() {
           </div>
         </div>
         <div className="olivello-mobile">
-          <div id="due-colonne">
+          <div id="due-colonne" className="due-colonne-olivello">
             <div className="olivello-cent">
               <h3>BEFORE</h3>
             </div>
@@ -53,7 +53,7 @@ export default function Olivello() {
             <div className="colonna-img">
               <img src="/olivello-4.png" alt="Before" />
             </div>
-            <div className="olivello-cent">
+            <div className="olivello-cent after">
               <h3>AFTER</h3>
             </div>
             <div className="colonna-img">
