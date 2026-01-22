@@ -260,6 +260,59 @@ img {
   min-width: 250px; /* Evita che diventino troppo piccoli su mobile */
 }
 
+#lingue-grid {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8rem; /* Gap ampio per il desktop */
+  width: 100%;
+  max-width: 1440px;
+  margin-top: 125px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#lingue-grid .colonna-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 200px;
+  min-width: 0 !important;
+}
+
+#lingue-grid h3 {
+  font-weight: 400 !important; /* Rimuove il bold */
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  #lingue-grid {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 30px !important; /* Gap ridotto per il mobile */
+    margin-top: 50px !important;
+  }
+
+  #lingue-grid .colonna-item {
+    flex: 0 1 calc(50% - 15px) !important;
+  }
+
+  #lingue-grid img.img-eyes {
+    max-width: 110px !important;
+    width: 100% !important;
+    height: auto !important;
+    padding-bottom: 5px !important;
+  }
+
+  #lingue-grid h3 {
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    margin-top: 5px !important;
+  }
+}
+
 .left-align {
   display: flex;
   flex-direction: column; /* Mette H3 sotto l'immagine */
@@ -729,10 +782,11 @@ img {
 /* --- SEZIONE BALOO (TESTO SX, IMG DX) --- */
 #due-colonne-eyes {
   display: flex;
-  flex-direction: row; /* Desktop: fianco a fianco */
+  flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap; /* Permette di andare a capo su mobile */
+  /* Allinea testo e immagine esattamente allo stesso punto in alto */
+  align-items: flex-start !important;
+  flex-wrap: wrap;
   gap: 4rem;
   width: 100%;
   box-sizing: border-box;
@@ -740,65 +794,83 @@ img {
 }
 
 .left-align-eyes {
-  flex: 1.2; /* Dà leggermente più spazio al testo */
+  /* Colonna del testo resa più stretta */
+  flex: 0 1 450px !important;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Allinea figli a sinistra */
-  text-align: left; /* Allinea testo a sinistra */
+  align-items: flex-start;
+  text-align: left;
 }
 
 .colonna-item-eyes {
-  flex: 1;
+  flex: 1.5 !important;
   display: flex;
-  justify-content: flex-end; /* Spinge immagine a destra su desktop */
-  align-items: center;
+  justify-content: flex-end;
+  /* Forza l'immagine a stare in alto per pareggiare il testo */
+  align-items: flex-start !important;
 }
 
 .colonna-item-eyes img {
-  max-width: 100%;
+  max-width: 500px !important; /* Riga aggiunta/modificata per rimpicciolire l'immagine */
+  width: 100%;
   height: auto;
   object-fit: contain;
+  align-self: flex-start; /* Assicura che l'immagine non si sposti verso il centro */
 }
 
-/* --- RESPONSIVE EYES & EARS (Sotto 1024px) --- */
+/* Stili Testo Baloo - Senza Grassetto */
+.balooText {
+  font-family: "Baloo 2", sans-serif;
+  font-weight: 400 !important;
+  color: #3d3d3d;
+}
+
+.balooh1 {
+  font-weight: 400 !important;
+  font-size: 5em;
+  margin: 0;
+}
+
+.balooh2 {
+  font-weight: 400 !important;
+  font-size: 4em;
+  line-height: 1.2em;
+  margin: 10px 0;
+}
+
+.baloop {
+  font-weight: 400 !important;
+  font-size: 1em;
+}
+
+/* --- RESPONSIVE E DIMENSIONI FONT (Mantenendo i tuoi valori) --- */
 @media (max-width: 1024px) {
   #due-colonne-eyes {
-    flex-direction: row !important; /* Forza il mantenimento in riga */
-    flex-wrap: nowrap !important; /* Impedisce di andare a capo */
-    gap: 1rem; /* Riduce il gap per far stare tutto */
-    align-items: center; /* Centra verticalmente testo e immagine */
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 1.5rem !important;
+    align-items: flex-start !important;
   }
 
   .left-align-eyes {
-    flex: 1.5 !important; /* Dà un po' più di spazio al testo rispetto all'img */
-    width: auto !important;
-  }
-
-  .colonna-item-eyes {
     flex: 1 !important;
-    width: auto !important;
-    display: flex;
-    justify-content: center;
   }
 
-  .colonna-item-eyes img {
-    max-width: 100%; /* L'immagine si restringe per non uscire */
-    height: auto;
-  }
-
-  /* Ridimensionamento font ancora più aggressivo per far stare il testo in metà schermo */
   .balooh1 {
     font-size: 3.5rem !important;
   }
 
   .balooh2 {
-    font-size: 2rem !important; /* Molto piccolo per evitare che le lettere escano */
+    font-size: 2rem !important;
     line-height: 1.1em;
     word-break: break-all;
   }
 
   .baloop {
-    font-size: 1rem !important; /* Riduce la descrizione */
+    font-size: 1rem !important;
+  }
+  .colonna-item-eyes img {
+    max-width: 90% !important; /* Riga aggiunta per il mobile/tablet */
   }
 }
 
@@ -808,13 +880,13 @@ img {
   }
 
   .balooh2 {
-    font-size: 1.4rem !important; /* Molto piccolo per evitare che le lettere escano */
+    font-size: 1.4rem !important;
     line-height: 1.1em;
     word-break: break-all;
   }
 
   .baloop {
-    font-size: 0.8rem !important; /* Riduce la descrizione */
+    font-size: 0.8rem !important;
   }
 }
 
@@ -824,13 +896,13 @@ img {
   }
 
   .balooh2 {
-    font-size: 1rem !important; /* Molto piccolo per evitare che le lettere escano */
+    font-size: 1rem !important;
     line-height: 1.1em;
     word-break: break-all;
   }
 
   .baloop {
-    font-size: 0.6rem !important; /* Riduce la descrizione */
+    font-size: 0.6rem !important;
   }
 }
 

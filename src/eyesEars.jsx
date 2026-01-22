@@ -62,8 +62,8 @@ export default function EyesEars() {
           </p>
         </div>
       </div>
-      <div id="contenitoreSfondo" className="sfondoBianco">
-        <div id="due-colonne">
+      <div id="contenitoreSfondo" className="sfondoBianco due-colonne-eyes">
+        <div id="lingue-grid">
           <div className="colonna-item">
             <img className="img-eyes" src="/eyes-2.png" alt="" />
             <h3>ENGLISH</h3>
