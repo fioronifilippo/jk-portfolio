@@ -260,12 +260,14 @@ img {
   min-width: 250px; /* Evita che diventino troppo piccoli su mobile */
 }
 
+/* --- GRIGLIA LINGUE --- */
 #lingue-grid {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  gap: 8rem; /* Gap ampio per il desktop */
+  /* Gap orizzontale e verticale identico */
+  gap: 50px;
   width: 100%;
   max-width: 1440px;
   margin-top: 125px;
@@ -277,32 +279,41 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 0 1 200px;
+  /* Mantiene le icone grandi fino al breakpoint mobile */
+  flex: 0 1 300px;
   min-width: 0 !important;
 }
 
-#lingue-grid h3 {
-  font-weight: 400 !important; /* Rimuove il bold */
-  margin-top: 20px;
+#lingue-grid img.img-eyes {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
 }
 
-@media (max-width: 1024px) {
+#lingue-grid h3 {
+  /* Testo senza grassetto */
+  font-weight: 400 !important;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
   #lingue-grid {
-    display: flex !important;
-    flex-direction: row !important;
-    flex-wrap: wrap !important;
-    gap: 30px !important; /* Gap ridotto per il mobile */
+    /* Il primo valore è il gap verticale, il secondo è quello orizzontale */
+    /* Riducendo il secondo valore le icone si avvicinano tra loro */
+    gap: 30px 20px !important;
     margin-top: 50px !important;
+    justify-content: center !important;
   }
 
   #lingue-grid .colonna-item {
-    flex: 0 1 calc(50% - 15px) !important;
+    /* Regoliamo il calc in base al nuovo gap orizzontale (20px / 2 = 10px) */
+    flex: 0 1 calc(50% - 10px) !important;
+    max-width: 150px !important; /* Impedisce che si allarghino troppo */
   }
 
   #lingue-grid img.img-eyes {
     max-width: 110px !important;
-    width: 100% !important;
-    height: auto !important;
     padding-bottom: 5px !important;
   }
 
