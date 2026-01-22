@@ -17,7 +17,7 @@ export default function WebDesign() {
           </>
         }
       />
-      <div className="centrata spazio-100">
+      <div className="centrata">
         <img src="/websitemin.png" alt="" />
       </div>
     </main>
