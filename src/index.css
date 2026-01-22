@@ -252,6 +252,12 @@ img {
   padding-top: 125px;
 }
 
+@media (max-width: 768px) {
+  .eyes-app-img {
+    padding-top: 50px;
+  }
+}
+
 .colonna-item {
   display: flex;
   flex-direction: column; /* Mette H3 sotto l'immagine */
@@ -652,6 +658,13 @@ img {
     justify-content: center !important;
     gap: 30px 15px !important; /* 30px tra le righe, 15px tra le due immagini della coppia */
     padding: 50px 10px !important;
+  }
+
+  #eyes-colonne.primo-eyes {
+    padding-top: 125px !important;
+  }
+  #eyes-colonne.ultimo-eyes {
+    padding-bottom: 125px !important;
   }
 
   #eyes-colonne img {

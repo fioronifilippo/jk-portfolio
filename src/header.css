@@ -3,6 +3,27 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 50px;
+  /* Impedisce agli elementi di andare a capo */
+  flex-wrap: nowrap !important;
+}
+
+@media (max-width: 768px) {
+  #headerContenitore {
+    padding: 15px 20px;
+    /* Assicura che gli elementi siano distribuiti uno a destra e uno a sinistra */
+    justify-content: space-between !important;
+  }
+
+  .linkHeaderHome {
+    /* Rimuoviamo position: fixed se lo avevi messo, per farlo stare nel flusso flex */
+    position: static !important;
+    display: flex;
+  }
+
+  .linkHeader {
+    /* Forza ABOUT ME a stare sempre a destra */
+    text-align: right;
+  }
 }
 
 @media (max-width: 500px) {

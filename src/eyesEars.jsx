@@ -82,7 +82,7 @@ export default function EyesEars() {
           </div>
         </div>
       </div>
-      <div id="eyes-colonne">
+      <div id="eyes-colonne" className="primo-eyes">
         <img src="/duomo-1.png" alt="" />
         <img src="/duomo-5.png" alt="" />
         <img src="/duomo-4.png" alt="" />
@@ -112,7 +112,7 @@ export default function EyesEars() {
         <img src="/duomo-18.png" alt="" />
         <img src="/cover2.png" alt="" />
       </div>
-      <div id="eyes-colonne">
+      <div id="eyes-colonne" className="ultimo-eyes">
         <img src="/cover3.png" alt="" />
         <img src="/duomo-19.png" alt="" />
         <img src="/duomo-20.png" alt="" />
