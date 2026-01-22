@@ -763,38 +763,74 @@ img {
 /* --- RESPONSIVE EYES & EARS (Sotto 1024px) --- */
 @media (max-width: 1024px) {
   #due-colonne-eyes {
-    flex-direction: column; /* Testo sopra, immagine sotto */
-    gap: 2rem;
+    flex-direction: row !important; /* Forza il mantenimento in riga */
+    flex-wrap: nowrap !important; /* Impedisce di andare a capo */
+    gap: 1rem; /* Riduce il gap per far stare tutto */
+    align-items: center; /* Centra verticalmente testo e immagine */
   }
 
-  .left-align-eyes,
+  .left-align-eyes {
+    flex: 1.5 !important; /* Dà un po' più di spazio al testo rispetto all'img */
+    width: auto !important;
+  }
+
   .colonna-item-eyes {
-    width: 100% !important;
-    flex: none;
+    flex: 1 !important;
+    width: auto !important;
+    display: flex;
+    justify-content: center;
   }
 
-  .colonna-item-eyes {
-    justify-content: center; /* Centra immagine su mobile */
+  .colonna-item-eyes img {
+    max-width: 100%; /* L'immagine si restringe per non uscire */
+    height: auto;
   }
 
-  /* Ridimensionamento font per non far uscire l'alfabeto dai bordi */
+  /* Ridimensionamento font ancora più aggressivo per far stare il testo in metà schermo */
   .balooh1 {
     font-size: 3.5rem !important;
   }
 
   .balooh2 {
-    font-size: 2.2rem !important;
-    word-break: break-all; /* Fondamentale per le stringhe lunghe di lettere */
+    font-size: 2rem !important; /* Molto piccolo per evitare che le lettere escano */
+    line-height: 1.1em;
+    word-break: break-all;
   }
 
-  /* Gestione delle file di icone/duomo su mobile */
-  #eyes-colonne {
-    padding: 50px 10px !important;
-    gap: 10px !important;
+  .baloop {
+    font-size: 1rem !important; /* Riduce la descrizione */
+  }
+}
+
+@media (max-width: 768px) {
+  .balooh1 {
+    font-size: 2.5rem !important;
   }
 
-  #eyes-colonne img {
-    height: 80px !important; /* Rimpicciolisce le icone per farle stare in riga */
+  .balooh2 {
+    font-size: 1.4rem !important; /* Molto piccolo per evitare che le lettere escano */
+    line-height: 1.1em;
+    word-break: break-all;
+  }
+
+  .baloop {
+    font-size: 0.8rem !important; /* Riduce la descrizione */
+  }
+}
+
+@media (max-width: 500px) {
+  .balooh1 {
+    font-size: 2rem !important;
+  }
+
+  .balooh2 {
+    font-size: 1rem !important; /* Molto piccolo per evitare che le lettere escano */
+    line-height: 1.1em;
+    word-break: break-all;
+  }
+
+  .baloop {
+    font-size: 0.6rem !important; /* Riduce la descrizione */
   }
 }
 
