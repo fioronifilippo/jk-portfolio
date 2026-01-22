@@ -42,11 +42,11 @@ export default function TuttoVero() {
         <img src="/tutto-vero-9.jpg" alt="" />
         <img src="/tutto-vero-8.jpg" alt="" />
       </div>
-      <div id="due-colonne">
+      <div id="due-colonne-vero">
         <img src="/tutto-vero-20.png" className="max-300" alt="" />
         <img src="/tutto-vero-22.png" alt="" />
       </div>
-      <div id="due-colonne">
+      <div id="due-colonne-vero">
         <img src="/tutto-vero-21.png" alt="" />
       </div>
     </main>

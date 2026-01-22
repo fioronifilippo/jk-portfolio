@@ -308,6 +308,20 @@ img {
   padding-right: 20px !important;
 }
 
+#due-colonne-vero {
+  display: flex;
+  flex-direction: row !important; /* Forza la riga */
+  flex-wrap: nowrap !important; /* Impedisce di andare a capo */
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Spazio tra le immagini (ridotto per mobile) */
+  width: 100%;
+  max-width: 1440px;
+  box-sizing: border-box;
+  overflow: hidden; /* Taglia ciò che esce, ma noi lo rimpiccioliremo */
+  margin: 50px auto; /* Spazio sopra e sotto */
+}
+
 #due-colonne2 {
   display: flex;
   justify-content: flex-start; /* Allinea all'inizio invece che al centro */
@@ -346,6 +360,36 @@ img {
   object-fit: cover;
 }
 
+#due-colonne-vero img {
+  display: block;
+  /* RESET BASAMENTI FISSI */
+  flex: 0 1 auto !important; /* 0: non cresce, 1: rimpicciolisce, auto: base naturale */
+
+  /* LARGHEZZA RESPONSIVE */
+  width: 45%; /* Ogni immagine prende quasi metà spazio */
+  max-width: 600px; /* Limite per desktop */
+  min-width: 0 !important; /* Fondamentale: permette di scendere sotto la dimensione originale */
+
+  height: auto;
+  object-fit: contain;
+}
+
+#due-colonne-vero:last-of-type img {
+  width: 100%; /* Se c'è solo una immagine, può essere grande */
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  #due-colonne-vero {
+    gap: 10px !important; /* Spazio minimo tra le due immagini su mobile */
+    flex-direction: row !important; /* Forza il mantenimento in riga */
+  }
+
+  #due-colonne-vero img {
+    max-width: 48%; /* Assicura che due immagini stiano sempre fianco a fianco */
+  }
+}
+
 /* Assicuriamoci che ogni colonna dentro #due-colonne sia un contenitore centrato */
 #due-colonne > div,
 #due-colonne .colonna-img {
@@ -356,6 +400,15 @@ img {
 }
 
 #due-colonne img {
+  /* Rimuoviamo il flex diretto sull'immagine per evitare conflitti */
+  flex: none;
+  width: 100%;
+  max-width: 600px; /* Mantieni il tuo limite di grandezza */
+  height: auto;
+  object-fit: contain;
+}
+
+#due-colonne-vero img {
   /* Rimuoviamo il flex diretto sull'immagine per evitare conflitti */
   flex: none;
   width: 100%;
