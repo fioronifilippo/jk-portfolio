@@ -13,15 +13,15 @@ export default function SeanScully() {
         }
         url="/sean-scully.jpg"
       />
-      <div id="due-colonne" className="meno50">
-        <img src="/scully-7.png" alt="" />
-        <img src="/scully-2.png" alt="" />
+      <div id="due-colonne" className="">
+        <img src="/s1.png" alt="" />
+        <img src="/s2.png" alt="" />
       </div>
-      <div id="due-colonne" className="meno200">
-        <img src="/scully-1.png" alt="" />
-        <img src="/scully-6.png" alt="" />
+      <div id="due-colonne" className="">
+        <img src="/s3.png" alt="" />
+        <img src="/s4.png" alt="" />
       </div>
-      <div id="img-centrata">
+      <div id="img-centrata" className="scully-pad">
         <img src="/scully.png" alt="" />
       </div>
     </main>
