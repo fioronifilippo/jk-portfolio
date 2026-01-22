@@ -468,27 +468,26 @@ img {
   display: block;
 }
 
-/* --- CONFIGURAZIONE MOBILE (Sotto i 768px) --- */
 @media (max-width: 768px) {
   #quattro-colonne-olivello {
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ) !important; /* Forza sempre le 2 colonne */
-    gap: 15px; /* Spazio leggermente ridotto per schermi piccoli */
-    margin: 50px auto;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px;
+    margin: 75px auto;
   }
 
-  #quattro-colonne-olivello img {
-    height: 250px; /* Altezza ottimizzata per le 2 colonne su mobile */
-    /* width: 100% è già ereditato da sopra */
+  /* Usiamo una specificità maggiore per "vincere" contro .height400 */
+  #quattro-colonne-olivello img.height400 {
+    height: 300px !important; /* Forza l'altezza a 300px */
+    max-height: 300px !important; /* Sovrascrive il max-height della classe */
+    width: 100% !important; /* Forza l'immagine a occupare la larghezza della colonna */
+    object-fit: contain;
   }
 }
 
-/* Fix aggiuntivo per schermi molto stretti (sotto 400px) */
 @media (max-width: 400px) {
-  #quattro-colonne-olivello img {
-    height: 180px; /* Riduce un po' l'altezza per non farle sembrare troppo lunghe */
+  #quattro-colonne-olivello img.height400 {
+    height: 200px !important; /* Se ancora troppo grandi, qui puoi scendere */
+    max-height: 200px !important;
   }
 }
 
