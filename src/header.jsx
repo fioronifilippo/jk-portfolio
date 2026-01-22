@@ -8,12 +8,8 @@ function Header() {
   return (
     <header id="headerContenitore">
       {/* Il logo riceve la classe "nascondi-logo-mobile" se NON siamo in Home */}
-      <Link to="/">
-        <img
-          src="/JozefinaKoliqi.svg"
-          className={`logo ${!isHome ? "nascondi-logo-mobile" : ""}`}
-          alt="Jozefina logo"
-        />
+      <Link to="/" className={`logo ${!isHome ? "nascondi-logo-mobile" : ""}`}>
+        JOZEFINA KOLIQI
       </Link>
 
       {/* Mostra la scritta HOME solo se NON siamo in Home */}
