@@ -11,7 +11,15 @@ export default function Olivello() {
           titolo="OLIVELLO"
           descrizione={
             <>
-              Front labels with different flavors for Olivello Toscano bottles.
+              Olivello Toscano is a unique condiment derived from olive leaves
+              the quintessence of the Tuscan landscape. For this project, I
+              designed a cohesive label system for their full range of flavors.
+              The visual identity reflects the product’s deep roots in tradition
+              and its sophisticated aging process in Bolgheri wine barrels. By
+              blending classic Italian elegance with a modern botanical
+              aesthetic, the labels distinguish each flavor profile while
+              maintaining a premium, artisanal feel across the entire
+              collection.
             </>
           }
           url="/olivello.jpg"

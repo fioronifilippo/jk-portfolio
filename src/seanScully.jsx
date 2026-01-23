@@ -7,8 +7,13 @@ export default function SeanScully() {
         titolo="SEAN SCULLY"
         descrizione={
           <>
-            The catalog of the works exhibited at Villa Panza, focusing
-            specifically on the works of the artist Sean Scully.
+            This editorial project involved designing a comprehensive catalog
+            for Sean Scully’s exhibition at the historic Villa Panza. The design
+            focuses on translating Scully's architectural use of color and
+            rhythm into a printed format. By balancing structured layouts with
+            generous white space, the catalog allows the weight of the artwork
+            to lead the visual narrative, creating a seamless transition from
+            the gallery walls to the page.
           </>
         }
         url="/sean-scully.jpg"

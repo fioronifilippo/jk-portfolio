@@ -12,8 +12,11 @@ export default function Cinema() {
         }
         descrizione={
           <>
-            This is a website prototype that I did for fun and to add to my
-            portfolio. Wanted to improve myself into web designing.
+            This website prototype began as a personal challenge to push my
+            creative boundaries. My goal was to explore advanced UI/UX
+            principles and refine my technical execution in web design,
+            resulting in a project that balances aesthetics with functional
+            design.
           </>
         }
       />

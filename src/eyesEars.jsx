@@ -7,18 +7,22 @@ export default function EyesEars() {
         titolo="EYES & EARS"
         descrizione={
           <>
-            "Eyes and Ears" is a project based on audiovisual language. It
-            involves creating illustrated books devoid of textual elements,
-            designed to teach languages to children through images rather than
-            words. The purpose of the project is to provide a linguistic
-            foundation through sequential images, serving as the basis for
-            forming spoken sentences. Initially, the project was conceived for
-            teaching the English language to children; later, the original idea
-            was expanded to create a teaching model for childhood education that
-            could be applied to languages in general. The images would remain
-            the same for every language; the only difference would be their
-            sequence, which needed to correspond to the syntax of the languages
-            chosen - English, Chinese, Bulgarian, Spanish, and Italian.
+            Eyes & Ears Treasure Hunt: Art History and Language Learning for
+            Children promotes the appreciation of the Italian cultural heritage.
+            The project creates itineraries of outdoor learning in which
+            children, families, and school groups search for hidden works of art
+            by following clues in the form of illustrations and stories. <br />
+            Eyes & Ears Treasure Hunt was created in the Florence Academy of
+            Fine Arts, Italy by a multicultural team of professors, PhD and
+            graduate students, and researchers from Italy, U.S.A, Mexico,
+            Albania, and China. <br />
+            "Eyes and Ears" is a project based on audiovisual language. The
+            purpose of the project is to provide a linguistic foundation through
+            sequential images, serving as the basis for forming spoken
+            sentences. The images would remain the same for every language; the
+            only difference would be their sequence, which needed to correspond
+            to the syntax of the languages chosen - English, Chinese, Spanish,
+            and Italian.
           </>
         }
       />
