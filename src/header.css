@@ -15,14 +15,16 @@
   }
 
   .linkHeaderHome {
-    /* Rimuoviamo position: fixed se lo avevi messo, per farlo stare nel flusso flex */
-    position: static !important;
+    position: fixed !important;
+    top: 15px;
+    left: 20px;
+    z-index: 9999;
     display: flex;
   }
 
+  /* Spingiamo ABOUT ME a destra */
   .linkHeader {
-    /* Forza ABOUT ME a stare sempre a destra */
-    text-align: right;
+    margin-left: auto !important;
   }
 }
 
