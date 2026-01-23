@@ -145,7 +145,8 @@ img {
   width: 100%;
 }
 
-.scully-pad {
+.scully-pad,
+.webpad {
   padding-top: 50px;
 }
 

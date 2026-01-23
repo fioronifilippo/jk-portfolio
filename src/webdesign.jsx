@@ -16,7 +16,7 @@ export default function WebDesign() {
           </>
         }
       />
-      <div className="sezione-singola">
+      <div className="sezione-singola webpad">
         <h3 className="testoS">BEFORE</h3>
       </div>
       <div className="centrata bottomP">
