@@ -5,9 +5,7 @@ function HeaderAbout() {
   return (
     <header id="headerContenitore">
       {/* Usiamo Link per tornare alla Home senza ricaricare */}
-      <Link to="/" className="linkHeader">
-        HOME
-      </Link>
+      <Link to="/">HOME</Link>
     </header>
   );
 }
