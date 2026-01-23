@@ -10,6 +10,8 @@ export default function AboutMe() {
           <div id="about-contenitore">
             <div>
               <h1 className="">About Me</h1>
+              <br />
+              <br />
               <p className="">
                 My name is Jozefina Koliqi. I'm a Graphic Designer based in
                 Italy, born and raised in Albania. I’ve been working as a

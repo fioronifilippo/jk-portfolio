@@ -455,7 +455,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
   justify-content: center;
-  gap: 5em;
+  gap: 3em;
   margin: 0 auto;
   max-width: 1440px;
   padding: 20px;
@@ -656,6 +656,7 @@ img {
   #due-colonne {
     flex-direction: column;
     align-items: center;
+    margin-top: 5rem;
   }
   .colonna-video,
   #due-colonne img {
@@ -720,8 +721,13 @@ img {
     margin: 0 auto;
   }
   #contenitoreSfondoS.sezioneS {
-    padding-top: 50px !important;
+    padding-top: 75px !important;
   }
+
+  #contenitoreSfondo {
+    padding-bottom: 75px;
+  }
+
   .eyes-app-img {
     padding-top: 50px;
   }
